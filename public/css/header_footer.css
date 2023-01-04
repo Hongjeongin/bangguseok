@@ -1,0 +1,165 @@
+.section .inner {
+    max-width: 1300px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    position: relative;
+}
+header.section{
+    border-bottom:2px solid rgba(146, 146, 146, 0.664);
+    font-family: 'Jua',sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+
+}
+/* FLOAT CLEARFIX */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.float--left {
+    float: left;
+    width: 300px;
+}
+
+.float--right {
+    float: right;
+}
+
+
+/* HEADER */
+header {
+    position: sticky;
+    top:0;
+    width: 100%;
+    z-index:999;
+    background-color: rgba(255, 255, 255, 0.349);
+    
+}
+
+header .inner {
+    height: 80px;
+
+}
+
+header .menu-group {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    
+}
+/* MAIN_MENU */
+header .main-menu {
+    display: flex;
+    margin-left: 30px;
+}
+
+.main_btn {
+    display: block;
+    padding: 15px;
+    margin-top: 10px;
+    color: rgb(44, 44, 44);
+    text-decoration-line:none;
+}
+
+.main_btn:hover {
+    color: #5cd1ffe3;
+}
+
+
+.sign_up_btn{
+    margin-left: 20px;
+    display: block;
+    padding: 15px;
+    margin-top: 8px;
+    color: rgb(30, 184, 255);
+    text-decoration-line:none;
+}
+.sign_up_btn:hover {
+    color: #5cd1ffe3;
+}
+/* LOGO */
+header .logo {
+    margin: auto;
+}
+
+header .logo a {
+    display: block;
+    background: url("../img/logo.png") center center ;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 145px;
+    height: 115px;
+    margin:1px;
+    padding:1px;
+    text-indent: -9999px;
+}
+
+header .logo a:hover {
+    background: ulr("../img/logo.png")
+}
+.logo-text{
+    margin-top:5px;
+    width: 100px;
+    color:black;
+}
+.info-text{
+    margin-top:5px;
+    width: 500px;
+    color:#7e7e7e;
+}
+
+/* FOOTER */
+footer {
+    clear: both;
+    background-color: rgba(255, 255, 255, 0.5);
+    max-height: 200px;
+}
+
+footer .inner {
+    padding: 17px;
+    font-family: 'Jua', sans-serif;
+}
+
+footer.section{
+    border-top:2px solid rgba(146, 146, 146, 0.664);
+}
+footer .site-links {
+    display: flex;
+}
+footer .site-links.float--left {
+    padding-top:10px;
+}
+footer .site-links.float--right {
+    padding-bottom:1px;
+}
+
+footer .site-links li {
+    font-size: 15px;
+    margin-right: 10px;
+    color: #767676;
+}
+
+footer .site-links li a {
+    color: #4078c0
+}
+
+footer .site-links li a:hover {
+    text-decoration: underline;
+}
+
+footer .footer-logo {
+    display: block;
+    background: url("../img/logo.png") center center ;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100px;
+    height: 100px;
+}

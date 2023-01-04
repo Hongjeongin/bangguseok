@@ -1,0 +1,52 @@
+<meta charset="utf-8">
+<div class="inner clearfix">
+
+    <div class="menu-group float--left">
+        <div class="logo">
+            <%if(styleNo == 0){%>
+            <a href="#"></a>
+            <%}else if(styleNo != 0){%>
+            <a href="/"></a>
+            <%}%>
+        </div>
+    </div>
+    <div class="menu-group float--right">
+        <ul class="main-menu toggle">
+            <%if(styleNo == 0){%>
+            <li><a class="main_btn" href="#intro">회사소개</a></li>
+            <%}else if(styleNo != 0){%>
+            <li><a class="main_btn" href="/#intro">회사소개</a></li>
+            <%}%>
+            <%if(styleNo == 1){%>
+            <li><a class="main_btn" href="#loan">대출받기</a></li>
+            <%}else if(styleNo != 1){%>
+            <li><a class="main_btn" href="/loan">대출받기</a></li>
+            <%}%>
+            <%if(styleNo == 0){%>
+            <li><a class="main_btn" href="#list">취급품목</a></li>
+            <%}else if(styleNo != 0){%>
+            <li><a class="main_btn" href="/#list">취급품목</a></li>
+            <%}%>
+            <%if(styleNo == 3){%>
+            <li><a class="main_btn" href="#dambo1">한도문의</a></li>
+            <%}else if(styleNo != 3){%>
+            <li><a class="main_btn" href="/dambo1">한도문의</a></li>
+            <%}%>
+            <%if(styleNo == 4){%>
+            <li><a class="main_btn" href="#loanlist">대출이력</a></li>
+            <%}else if(styleNo != 4){%>
+            <li><a class="main_btn" href="/loanlist">대출이력</a></li>
+            <%}%>
+            <%if(login == 0){%>
+            <li><a class="sign_up_btn" href="/sign_up">로그인</a></li>
+            <%}else if(login == 5){%>
+            <li><a class="main_btn" href="/menage">관리자페이지</a></li>
+            <li><a class="main_btn" href="/mypage">마이페이지</a></li>
+            <li><a class="main_btn" href="/log_out">로그아웃</a></li>
+            <%}else{%>
+            <li><a class="main_btn" href="/mypage">마이페이지</a></li>
+            <li><a class="main_btn" href="/log_out">로그아웃</a></li>
+            <%}%>
+        </ul>
+    </div>
+</div>

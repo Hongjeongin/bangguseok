@@ -1,0 +1,206 @@
+<div class="body__container">
+    <div class="main-container">
+        <div class="title_back">
+            <div class="title">관리페이지</div>
+            <div class="buttoncontainer">
+                <a href="javascript:vis(1);" id="btn1st" onclick="">대출/담보 등록</a>
+                <a href="javascript:vis(2);" id="btn2nd" onclick="">상환 등록</a>
+                <a href="/loansecmanage1" id="btn3rd" onclick="">담보 및 대출 현황</a>
+                <script>
+                    function vis(n) {
+                        document.getElementById("content1st").style.display = "none";
+                        document.getElementById("content2nd").style.display = "none";
+                        if (n == 1) {
+                            document.getElementById("content1st").style.display = "block";
+
+                            document.getElementById("btn1st").style.color = "rgb(88, 109, 204)";
+                            document.getElementById("btn2nd").style.color = "rgb(94, 169, 219)";
+
+                            document.getElementById("btn1st").style.fontSize = "30px";
+                            document.getElementById("btn2nd").style.fontSize = "20px";
+                        } else if (n == 2) {
+                            document.getElementById("content2nd").style.display = "block";
+
+                            document.getElementById("btn1st").style.color = "rgb(94, 169, 219)";
+                            document.getElementById("btn2nd").style.color = "rgb(88, 109, 204)";
+
+                            document.getElementById("btn1st").style.fontSize = "20px";
+                            document.getElementById("btn2nd").style.fontSize = "30px";
+
+                        } 
+                    }
+                </script>
+            </div>
+        </div>
+
+        <div class="board">
+            <div class="loan" id="content1st">
+                <form action="/loanwrite" method="post" enctype="multipart/form-data">
+                    <table class="blueone" border="1">
+                        <tr class="FUCK">
+                            <td>-----------------</td>
+                            <td>-대출------------------</td>
+                        </tr>
+                        <!--
+                        <tr class="FUCK_in">
+                            <td class="table_title">대출 총액</td>
+                            <td><input type="number" name="total_loan" id="total_loan"  /></td>
+                        </tr>
+                        -->
+                        <tr class="FUCK_in">
+                            <td class="table_title">대출 원금</td>
+                            <td><input type="number" name="principal" id="principal" /></td>
+                        </tr>
+                        <!--
+                        <tr class="FUCK_in">
+                            <td class="table_title">상환 금액</td>
+                            <td><input type="number" name="repayment" id="repayment"  /></td>
+                        </tr>
+                    -->
+                        <tr class="FUCK_in">
+                            <td class="table_title">대출 날짜</td>
+                            <td><input type="date" name="loan_date" id="loan_date" /></td>
+                        </tr>
+
+                        <tr class="FUCK_in">
+                            <td class="table_title">만기 날짜</td>
+                            <td><input type="date" name="expirationed" id="expirationed" /></td>
+                        </tr>
+
+                        <tr class="FUCK_in">
+                            <td class="table_title">기타 비용</td>
+                            <td><input type="number" name="expenses" id="expenses" /></td>
+                        </tr>
+                        <!--
+                        <tr class="FUCK_in">
+                            <td class="table_title">대출 일수</td>
+                            <td><input type="number" name="day_loan" id="day_loan"  /></td>
+                        </tr>
+                    -->
+                        <!--
+                        <tr class="FUCK_in">
+                            <td class="table_title">총 발생 이자</td>
+                            <td><input type="number" name="interest" id="interest"  /></td>
+                        </tr>
+                    -->
+                        <tr class="FUCK_in">
+                            <td class="table_title">상태</td>
+                            <td><input type="text" name="state" id="state" /></td>
+                        </tr>
+                        <tr class="FUCK_in">
+                            <td class="table_title">채무자 전화번호</td>
+                            <td><input type="tel" id="phone" name="phone" placeholder="010-0000-0000" /></td>
+                        </tr>
+
+                        <tr>
+                            <td><br></td>
+                        </tr>
+                        <tr class="FUCK">
+                            <td>-----------------</td>
+                            <td>-담보------------------</td>
+                        </tr>
+                        <tr>
+                            <td><br></td>
+                        </tr>
+                        <tr class="FUCK_in">
+                            <td class="table_title">제출 날짜</td>
+                            <td><input type="date" name="give_date" id="give_date" /></td>
+                        </tr>
+                        <tr class="FUCK_in">
+                            <td class="table_title">브랜드</td>
+                            <td><input type="text" name="brand" id="brand" /></td>
+                        </tr>
+                        <tr class="FUCK_in">
+                            <td class="table_title">시세</td>
+                            <td><input type="number" name="price" id="price" /></td>
+                        </tr>
+
+                        <tr class="FUCK_in">
+                            <td class="table_title">수령 날짜</td>
+                            <td><input type="date" name="get_date" id="get_date" /></td>
+                        </tr>
+                        <tr class="FUCK_in">
+                            <td class="table_title">품목 일단 (6)</td>
+                            <td><input type="text" name="product" id="product" placeholder="" /></td>
+                        </tr>
+
+                        <tr class="FUCK_in">
+                            <td class="table_title">서류 그룹 10(서류)~11(사진)</td>
+                            <td><input type="text" name="docu_g" id="docu_g" placeholder="document그룹 입력" /></td>
+                        </tr>
+                        <tr>
+                            <td><br></td>
+                        </tr>
+                        <tr class="FUCK">
+                            <td class="table_title">첨부파일</td>
+                            <td colspan="2">
+                                <input id="selfile" type="file" name="FileName" multiple='multiple'>
+                            </td>
+                        </tr>
+                        <tr>
+                        <tr>
+                            <td><br></td>
+                        </tr>
+                        <tr>
+                            <td><br></td>
+                        </tr>
+                        <tr>
+                            <td><br></td>
+                        </tr>
+                        <td class="submit_btn_td" colspan="2">
+                            <div class="submit_btn_con">
+                                <div class="submit_btn">
+                                    <input type="submit" />
+                                    </input>
+                                </div>
+                            </div>
+                        </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+            <div class="repay" id="content2nd">
+                <form action="/repayment" method="post">
+                    <table class="blueone" border="1">
+                        <tr class="FUCK_in">
+                            <td class="table_title">상환 총액</td>
+                            <td><input type="number" name="repay_amount" id="repay_amount" /></td>
+                        </tr>
+                        <tr class="FUCK_in">
+                            <td class="table_title">상환 날짜</td>
+                            <td><input type="date" name="repay_date" id="repay_date" /></td>
+                        </tr>
+                        <tr class="FUCK_in">
+                            <td class="table_title">상환 종류</td>
+                            <td><input type="number" name="repay_g" id="repay_g" /></td>
+                        </tr>
+                        <tr class="FUCK_in">
+                            <td class="table_title">대출 일련번호</td>
+                            <td><input type="text" name="loan_no" id="loan_no" /></td>
+                        </tr>
+                        <tr>
+                        <tr>
+                            <td><br></td>
+                        </tr>
+                        <tr>
+                            <td><br></td>
+                        </tr>
+                        <tr>
+                            <td><br></td>
+                        </tr>
+                        <td class="submit_btn_td" colspan="2">
+                            <div class="submit_btn_con">
+                                <div class="submit_btn">
+                                    <input type="submit" />
+                                    </input>
+                                </div>
+                            </div>
+                        </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>

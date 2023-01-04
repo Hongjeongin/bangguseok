@@ -1,0 +1,731 @@
+.main-container {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+    min-height: 600px;
+    height: 100%;
+    position: relative;
+    font-family: "Jua", sans-serif;
+    display: block;
+}
+
+.mainContainer {
+    width: 1000px;
+    height: 100%;
+    position: relative;
+    margin: 0 auto;
+}
+
+.myPage_logo {
+    display: block;
+    background: url("../img/logo.png") center center;
+    background-size: 100%;
+    margin: 0 0 0 -1px;
+    border-left: 0.1px solid rgb(0, 0, 0);
+    width: 100%;
+    height: 100%;
+}
+
+.leftContainer {
+    float: left;
+    width: 180px;
+    margin-right: 1%;
+}
+
+.rightContainer {
+    float: left;
+    position: relative;
+    width: 760px;
+    height: 100%;
+    margin-left: 1%;
+}
+
+.rightTopContainer {
+    width: 900px;
+    height: 40px;
+    margin-top: 12%;
+}
+
+.rightCenterContainer {
+    position: relative;
+    width: 760px;
+    height: 170px;
+    border: 0.1px solid rgb(134, 134, 134);
+}
+
+.rightBottomContainer {
+    width: 100%;
+    min-height: 400px;
+    height: 100%;
+    margin-top: 40px;
+}
+
+.rightBoardContainer {
+    position: relative;
+    width: 760px;
+    min-height: 970px;
+}
+
+.blueone {
+    border-collapse: collapse;
+    margin-top: 30px;
+    width: 760px;
+    font-size: 18px;
+}
+
+.blueone th {
+    padding: 10px;
+    color: #168;
+    border-bottom: 3px solid #168;
+    text-align: center;
+}
+
+.postno {
+    border-right: 1px solid #ddd;
+    width: 100px;
+    text-align: center;
+}
+
+.posttitle {
+    border-right: 1px solid #ddd;
+    text-align: left;
+    width: 400px;
+}
+
+.writedate {
+    width: 100px;
+    text-align: center;
+}
+
+.blueone td {
+    color: #669;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.blueone tr:hover td {
+    color: #004;
+}
+
+.page {
+    text-align: center;
+}
+
+.choiceBox {
+    display: inline-block;
+    width: 10%;
+    height: 100%;
+    color: rgb(44, 44, 44);
+    line-height: 39px;
+    text-align: center;
+}
+
+.choiceBox:hover {
+    color: #5cd1ffe3;
+}
+
+.rightCenter_left {
+    float: left;
+    width: 70%;
+    height: 100%;
+}
+
+.rightCenter_right {
+    float: left;
+    width: 29.9%;
+    height: 100%;
+}
+
+.loanStatus_top {
+    width: 100%;
+    height: 70%;
+}
+
+.loanStatus_bot {
+    width: 100%;
+    border-top: 0.1px solid rgb(161, 161, 161);
+}
+
+.loanSearchBox {
+    position: relative;
+    padding: 6.5px 35px;
+}
+
+.loanSearchBox:after {
+    display: block;
+    clear: both;
+    content: '';
+}
+
+.loanDateGroup {
+    position: relative;
+    margin: 0 10px;
+    color: rgb(134, 134, 134);
+}
+
+.loanDate {
+    display: flex;
+    float: left;
+    position: relative;
+    width: 110px;
+    height: 30px;
+    border: 1px solid rgb(134, 134, 134);
+    background: white;
+    color: rgb(0, 0, 0);
+    text-indent: 8px;
+    line-height: 35px;
+    font-size: 13px;
+}
+
+.loanDate_text {
+    width: 78%;
+    height: 30px;
+}
+
+.loanDate_icoBox {
+    width: 22%;
+    height: 30px;
+}
+
+.calendar_ico {
+    position: absolute;
+    background: url("../img/calendar.png") center center;
+    background-size: 100%;
+    background-color: rgb(255, 255, 255);
+    bottom: 20%;
+    left: 80%;
+    width: 17px;
+    height: 17px;
+}
+
+.ico,
+.select .ico,
+.btn_srch {
+    background: url(../../../../img/service/front/order/common_img/sp_search.png?20200615) no-repeat;
+}
+
+.wave {
+    float: left;
+    width: 10px;
+    line-height: 32px;
+    text-align: center;
+}
+
+.listSearchBtn {
+    display: inline-block;
+    position: relative;
+    width: 70px;
+    height: 25px;
+    border: 1px solid rgb(134, 134, 134);
+    background-color: white;
+    color: rgb(0, 0, 0);
+    line-height: 27px;
+    margin-left: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.searchBtn {
+    display: inline-block;
+    position: relative;
+    width: 60px;
+    height: 25px;
+    border: 1px solid rgb(134, 134, 134);
+    background-color: rgb(146, 221, 255);
+    color: rgb(0, 0, 0);
+    line-height: 27px;
+    margin-left: 20px;
+    text-indent: 12px;
+    font-size: 14px;
+}
+
+.search_ico {
+    display: inline-block;
+    position: absolute;
+    background: url("../img/magnifier.png") center center;
+    background-size: 100%;
+    background-color: rgb(146, 221, 255);
+    bottom: 20%;
+    margin-left: 4px;
+    width: 17px;
+    height: 17px;
+}
+
+.loanState {
+    float: left;
+    width: 32.9%;
+    height: 100%;
+    margin: auto;
+}
+
+.loanStateTextBox {
+    width: 100%;
+    height: 29%;
+    float: left;
+    line-height: 55px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.loanStateCircleBox {
+    width: 100%;
+    height: 65%;
+    float: left;
+}
+
+#userOutBox {
+    width: 160px;
+    height: 180px;
+    background-color: rgb(146, 221, 255);
+    border: 1px solid rgb(146, 221, 255);
+    border-radius: 5px;
+    margin-top: 50%;
+}
+
+#userCircleBox {
+    width: 100px;
+    height: 100px;
+    margin: 15% 30px 0%;
+    font-size: 15px;
+    line-height: 50px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.userCircle {
+    background: url('../img/user.png') center center;
+    background-size: 90%;
+    background-repeat: no-repeat;
+}
+
+.loanStateCircle {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(146, 221, 255);
+    border-radius: 50%;
+    border: 1px solid rgb(146, 221, 255);
+    margin: 7% 35% 5% 35%;
+    text-align: center;
+    line-height: 50px;
+}
+
+.check_calendar {
+    visibility: hidden;
+    position: absolute;
+    width: 220px;
+}
+
+.check_calendar .check_month {
+    position: relative;
+    padding: 12px 0 7px;
+    border: 0.1px solid rgb(161, 161, 161);
+    border-bottom: none;
+    background-color: rgb(125, 214, 255);
+    text-align: center;
+}
+
+.check_calendar .check_month a.calendar_month_prev_btn {
+    left: 30px;
+    background-position: 0 -45px !important;
+    background: url("../img/button/month_prev_btn.png") center center;
+    background-size: 200%;
+}
+
+.check_calendar .check_month a.calendar_month_next_btn {
+    right: 30px;
+    background-position: -20px -45px !important;
+    background: url("../img/button/month_next_btn.png") center center;
+    background-size: 200%;
+}
+
+.check_calendar .check_month a {
+    display: inline-block;
+    overflow: hidden;
+    position: absolute !important;
+    top: 50%;
+    width: 20px !important;
+    height: 30px !important;
+    margin-top: -10px;
+    border: none !important;
+    line-height: 9999px;
+}
+
+.calendar_title_year {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.calendar_title_month {
+    display: inline-block;
+    overflow: hidden;
+    width: 45px;
+    height: 40px;
+    margin: 0 auto;
+    background-position: -50px -100px;
+    font-size: 40px;
+}
+
+.check_day {
+    margin-top: -1px;
+    padding: 11px 9px 15px;
+    border: 0.1px solid rgb(161, 161, 161);
+    border-top: none;
+    background-color: rgb(255, 255, 255);
+}
+
+.check_calendar .check_day th {
+    font-weight: normal;
+    color: rgb(161, 161, 161);
+}
+
+.weekdays {
+    width: 190px;
+    height: 25px;
+    padding: 0 5px;
+    display: flex;
+    align-items: center;
+}
+
+.satDay {
+    color: rgb(121, 156, 255);
+}
+
+.sunDay {
+    color: rgb(255, 72, 72);
+}
+
+.weekdays div {
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+    width: calc(230px / 7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calendar_date {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+}
+
+.calendar_date a {
+    font-size: 12px;
+    display: flex;
+    margin: 1px;
+    width: 25px;
+    height: 20px;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    text-shadow: 0 1px 0.5rem rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+    transition: background-color 0.1s;
+}
+
+.calendar_date div {
+    font-size: 12px;
+    display: flex;
+    margin: 1px;
+    width: 25px;
+    height: 20px;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    text-shadow: 0 1px 0.5rem rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+    transition: background-color 0.1s;
+}
+
+.calendar_date a:hover {
+    background-color: rgb(125, 214, 255, 0.5);
+    cursor: pointer;
+}
+
+.prev-date,
+.next-date {
+    opacity: 0.5;
+}
+
+.today {
+    background-color: rgb(125, 214, 255);
+}
+
+.loanDateBox {
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    border-radius: 70px;
+    border: 0.1px solid rgb(161, 161, 161);
+    text-align: center;
+    font-size: 15px;
+    line-height: 31px;
+}
+
+.hr {
+    width: 760px;
+    margin: 25px 0 25px;
+    border: 0.1px solid rgb(206, 206, 206);
+    text-align: center;
+}
+
+.empty_section {
+    width: 760px;
+    height: 300px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.loanInfo {
+    display: table;
+    width: 760px;
+    height: 150px;
+    padding: 5px 0 5px;
+    table-layout: fixed;
+}
+
+.pictureBox {
+    display: table-cell;
+    position: relative;
+    height: 100%;
+    width: 24%;
+    vertical-align: middle;
+}
+
+.picture {
+    overflow: hidden;
+    text-align: center;
+    display: block;
+    border: 1px solid rgb(161, 161, 161);
+    padding: 10px 10px;
+    width: 80%;
+    min-height: 120px;
+}
+
+.photo {
+    width: 100%;
+    height: 100%;
+    background-size: 100%;
+}
+
+.loanInfo_detail {
+    display: table-cell;
+    position: relative;
+    height: 100%;
+    width: 50%;
+}
+
+.loanInfo_inner {
+    min-height: 155px;
+    width: 100%;
+    padding: 25px 0px 25px 25px;
+}
+
+.modelName {
+    height: 50%;
+    font-size: 20px;
+}
+
+.loanAmount {
+    float: 10px;
+    width: 35%;
+    height: 100%;
+}
+
+.realLoanDate {
+    width: 35%;
+    height: 100%;
+    text-align: center;
+}
+
+.loanStatement {
+    width: 30%;
+    height: 100%;
+    text-align: center;
+}
+
+.loanDocuments {
+    display: table-cell;
+    position: relative;
+    vertical-align: middle;
+    padding: 0 30px;
+}
+
+.modal_wrap {
+    display: none;
+    width: 150px;
+    height: 200px;
+    right: -123px;
+    top: -24px;
+    position: absolute;
+    margin: 0 auto;
+    background: rgba(224, 224, 224, 0.5);
+    border-radius: 5px;
+    z-index: 2;
+}
+
+.modal_top {
+    top: 50px;
+    width: 100%;
+    height: 30px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: rgb(78, 125, 255);
+    text-align: center;
+}
+
+.modal_top_text {
+    position: absolute;
+    width: 150px;
+    height: 10px;
+    top: 8px;
+    vertical-align: middle;
+}
+
+.modal_top_box {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 5px;
+    top: 5px;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    vertical-align: middle;
+}
+
+.modal_bottom {
+    width: 150px;
+    height: 100%;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.modal_bottom_inner {
+    margin: 15px 12px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.modal_close {
+    display: block;
+    position: relative;
+    font-size: 15px;
+}
+
+.modal_close_ico {
+    display: inline-block;
+    position: relative;
+    background: url("../img/button/cancel_img.png") center center;
+    background-size: 100%;
+    top: 3px;
+    width: 14px;
+    height: 14px;
+}
+
+.loanDocuBtn {
+    display: block;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid rgb(161, 161, 161);
+    background-color: rgb(255, 255, 255);
+    color: rgb(30, 30, 30);
+    font-size: 18px;
+    text-decoration: none;
+    box-sizing: border-box;
+    appearance: none;
+}
+
+#userInBox {
+    width: 100px;
+    height: 20px;
+    margin: 10% 30px;
+    font-size: 18px;
+    text-align: center;
+    line-height: 22px;
+}
+
+#text {
+    display: block;
+    padding: 15px;
+    margin-top: 10px;
+    color: rgb(44, 44, 44);
+    text-decoration-line: none;
+}
+
+div {
+    display: block;
+}
+
+h3 {
+    font-size: 12px;
+}
+
+h4 {
+    display: block;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+td {
+    display: table-cell;
+    vertical-align: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
+table {
+    display: table;
+    border-collapse: separate;
+    box-sizing: border-box;
+    text-indent: initial;
+    border-spacing: 2px;
+    border-color: gray;
+}
+
+select {
+    width: 100%;
+    height: 29px;
+    font-size: 15px;
+    background: #fff url(https://static.nid.naver.com/images/join/pc/sel_arr_2x.gif) 100% 50% no-repeat;
+    background-size: 20px 8px;
+    -webkit-appearance: none;
+    display: inline-block;
+    text-align: start;
+    border: none;
+    cursor: default;
+    font-family: Dotum, "돋움", Helvetica, sans-serif;
+}
+
+.hr h4 {
+    margin: -15px 330px;
+    background: white;
+}
